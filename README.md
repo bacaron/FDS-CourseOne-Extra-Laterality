@@ -66,3 +66,23 @@ Here they are, in no particular order:
 1. fit a quadratic model in a tract, or multiple tracts, to identify a relationship between the participant's age and the white matter tract's FA
 2. compute laterality index (LI) between the left and right hemisphere tracts
 3. replicate findings from our work done by Mohammed
+
+## What is laterality?
+
+Laterality, in the context of white matter tract properties, hinges on the idea that the hemisphere's undergo different structural reorganization patterns. So, the structural properties of a tract in the left hemisphere might not follow the same developmental trajectory as one in the right hemisphere. By quantifying the difference between the hemispheres as a ratio between the difference between the hemispheres to the sum of the hemispheres, we can build a normalized index for how left or right lateralized a given tract is. This index is called "laterality".
+
+Here is the common defintion in the field for laterality index:
+
+```
+    li = (left - right) / (left + right)
+```
+
+Laterality can be computed using any type of statistic, including macro- and micro-level statistics!
+
+The goal of the original project was to identify how tract laterality changes across the lifespan!
+
+### References
+1. R.E. Smith, J.-D. Tournier, F. Calamante, A. Connelly. Anatomically-constrained tractography: improved diffusion MRI streamlines tractography through effective use of anatomical information. NeuroImage 62 (2012), pp. 1924–1938. 
+2. Bullock D, Takemura H, Caiafa CF, Kitchell L, McPherson B, Caron B, Pestilli F. Associative white matter connecting the dorsal and ventral posterior human cortex. Brain Struct Funct. 2019 Nov;224(8):2631-2660. doi: 10.1007/s00429-019-01907-8. Epub 2019 Jul 24. PMID: 31342157.
+3. Yeatman JD, Dougherty RF, Myall NJ, Wandell BA, Feldman HM. Tract profiles of white matter properties: automating fiber-tract quantification. PLoS One. 2012;7(11):e49790. doi: 10.1371/journal.pone.0049790. Epub 2012 Nov 14. PMID: 23166771; PMCID: PMC3498174.
+4. Bain JS, Yeatman JD, Schurr R, Rokem A, Mezer AA. Evaluating arcuate fasciculus laterality measurements across dataset and tractography pipelines. Hum Brain Mapp. 2019 Sep;40(13):3695-3711. doi: 10.1002/hbm.24626. Epub 2019 May 20. PMID: 31106944; PMCID: PMC6679767.
